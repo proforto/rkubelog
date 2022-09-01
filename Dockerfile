@@ -3,7 +3,7 @@
 
 FROM golang:1.16.4 as main
 RUN wget -O /etc/ssl/certs/papertrail-bundle.pem https://papertrailapp.com/tools/papertrail-bundle.pem
-WORKDIR /github.com/solarwinds/rkubelog
+WORKDIR /github.com/proforto/rkubelog
 ADD . .
 RUN CGO_ENABLED=0 go build -mod vendor -ldflags='-w -s -extldflags "-static"' -a -o /rkubelog .
 

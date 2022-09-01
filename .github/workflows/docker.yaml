@@ -8,7 +8,7 @@ on:
     types: [published]
 
 env:
-  IMAGE_NAME: "ghcr.io/solarwinds/rkubelog"
+  IMAGE_NAME: "ghcr.io/proforto/rkubelog"
 
 jobs:
   build:

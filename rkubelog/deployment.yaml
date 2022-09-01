@@ -21,7 +21,7 @@ spec:
     spec:
       serviceAccountName: rkubelog-sa
       containers:
-      - image: ghcr.io/solarwinds/rkubelog:r18
+      - image: ghcr.io/proforto/rkubelog:v1
         imagePullPolicy: Always
         name: "rkubelog"
         command:

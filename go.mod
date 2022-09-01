@@ -1,4 +1,4 @@
-module github.com/solarwinds/rkubelog
+module github.com/proforto/rkubelog
 
 go 1.15
 

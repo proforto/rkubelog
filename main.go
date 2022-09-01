@@ -18,7 +18,7 @@ import (
 	"github.com/boz/kail"
 	"github.com/boz/kcache/nsname"
 	"github.com/sirupsen/logrus"
-	"github.com/solarwinds/rkubelog/logshipper"
+	"github.com/proforto/rkubelog/logshipper"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

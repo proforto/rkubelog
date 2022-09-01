@@ -5,7 +5,6 @@ package logshipper
 
 import (
 	"context"
-	"fmt"
 	"time"
 
 	"github.com/boz/kail"
