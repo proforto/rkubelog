@@ -41,7 +41,6 @@ const (
 	defaultUltimateMaxDiskUsage = 99   // usage cannot go beyond this percentage value
 	defaultBatchSize            = 1000 // records
 	defaultDBLocation           = "./db"
-	cleanUpInterval             = 1 * time.Minute
 )
 
 var (
@@ -77,11 +76,6 @@ type Logger struct {
 	syslogWriter papertrailShipper
 
 	writeChan chan []byte
-}
-
-type kv struct {
-	k []byte
-	v []byte
 }
 
 // NewPapertrailLogger creates a papertrail log shipper and also returns an instance of Logger

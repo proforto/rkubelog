@@ -11,7 +11,7 @@ For any help with Papertrail, please check out their help page [here](https://he
 ## Usage
 To get the package:
 ```
-go get github.com/solarwinds/papertrail-go
+go get github.com/proforto/papertrail-go
 ```
 For a detailed usage example, please check out:
 https://github.com/solarwinds/cabbage/blob/master/logshipper/papertrail.go
@@ -29,4 +29,4 @@ make tests
 ```
 
 # Questions/Comments?
-Please [open an issue](https://github.com/solarwinds/papertrail-go/issues/new), we'd love to hear from you. As a SolarWinds Project, it is supported in a best-effort fashion.
+Please [open an issue](https://github.com/proforto/papertrail-go/issues/new), we'd love to hear from you. As a SolarWinds Project, it is supported in a best-effort fashion.

@@ -46,8 +46,6 @@ const (
 	// TLS represents TLS protocol
 	TLS syslogProto = "tcp+tls"
 
-	// like time.RFC3339Nano but with a limit of 6 digits in the SECFRAC part
-	rfc5424time = "2006-01-02T15:04:05.999999Z07:00"
 )
 
 type papertrailShipper interface {
@@ -139,7 +137,6 @@ func (s *SrslogShipper) Write(packet *SyslogPacket) (err error) {
 		tag = fmt.Sprintf("%s - %s", s.tag, tag)
 	}
 
-	timestamp := ts.Format(time.RFC3339)
 	// // r19
 	// msg := fmt.Sprintf("<%d>%d %s %s %s - - - %s",
 	// 	packet.Severity, 1, timestamp, packet.Hostname, tag, packet.Message)
@@ -152,7 +149,7 @@ func (s *SrslogShipper) Write(packet *SyslogPacket) (err error) {
 
 	// msg := fmt.Sprintf("%s - %s - %s - %s", packet.Hostname, tag, timestamp, packet.Message)
 
-	msg := fmt.Sprintf("%s - %s - %s - %s", packet.Hostname, tag, timestamp, packet.Message)
+	msg := fmt.Sprintf("%s - %s - %s", packet.Hostname, tag, packet.Message)
 
 	_, err = s.writer.WriteWithPriority(packet.Severity, []byte(msg))
 	return err

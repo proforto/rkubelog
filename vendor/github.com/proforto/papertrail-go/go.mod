@@ -1,4 +1,4 @@
-module github.com/solarwinds/papertrail-go
+module github.com/proforto/papertrail-go
 
 go 1.15
 

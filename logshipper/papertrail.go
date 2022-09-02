@@ -10,7 +10,7 @@ import (
 	"github.com/boz/kail"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
-	papertrailgo "github.com/solarwinds/papertrail-go"
+	papertrailgo "github.com/proforto/papertrail-go"
 )
 
 // PapertrailShipper type represents a papertrail log shipper
